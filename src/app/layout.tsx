@@ -1,3 +1,4 @@
+import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-background font-sans text-foreground antialiased`}
       >
         {children}
       </body>
